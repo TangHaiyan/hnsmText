@@ -1,0 +1,346 @@
+// bower:scss
+// endbower
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.banner{
+  img{
+    display: block;
+    width: 100%;
+  }
+}
+.page-index .content{
+  background: url('../images/bg.jpg') repeat; 
+}
+.content-block{
+  margin:0;
+  padding: 0.9rem 0;
+  
+  background: #fff;
+}
+.nav-item{
+  h2{
+    font-size: 0.7rem;
+    font-weight: normal;
+    text-align: center;
+  }
+  .img{
+    margin: 0 auto;
+    width: 2.25rem;
+    height: 2rem;
+    background-color: red;
+    border-radius: 0.25rem 0.25rem;
+    .icon{
+      display: block;
+      text-align: center;
+      font-size: 1.4rem;
+      color: #fff;      
+    }
+  }
+  .breast{
+    background-color: #e09400;
+  }
+  .face{
+    background-color: #7ebc50;
+  }
+  .body{
+    background-color: #f9521e;
+  }
+  .internal{
+    background-color: #00b1a3;
+  }
+  .yst{
+    background-color: #abcc3a;
+  }
+  .flower{
+    background-color: #f2007e;
+  }
+  .oxygen{
+    background-color: #04c2bb;
+  }
+  .youth{
+    background-color: #83c553;
+  }
+  .haunch{
+    background-color: #eb9528;
+  }
+  .fat{
+    background-color: #7e45fe;
+  }
+}
+
+.project-title,.cosmetologist-title{
+  height: 2.25rem;
+  line-height: 2.25rem;
+  font-size: 0.6rem;
+  background-color: #eee;
+  h2{
+    margin-top: 0;
+    padding-left: 0.75rem;
+    font-weight: normal;    
+  }
+  span{
+    position: absolute;
+    right: 0.75rem;
+  }
+}
+
+.project-item{
+
+  .item{
+    height: 8rem;
+  }
+  .intro{
+    height: 2.25rem;
+  }
+}
+
+
+
+// 服务项目和美容师共同样式
+.project-item,.cosmetologist-item{
+  background: url('../images/bg.jpg') repeat; 
+   .img{
+    height: 100%;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+   }
+  .row:last-child{
+    padding-bottom: 0.75rem;
+  }
+  .item{
+    position: relative;
+    margin-top: 0.75rem;
+    background-size: 100% auto;
+    border-radius: 0.25rem 0.25rem;
+
+    .intro{
+      position: absolute;
+      bottom: 0;
+
+      width: 100%;
+      background-color: rgba(0,0,0,0.6);
+      color: #fff;
+      h3{
+        margin:0;
+        padding-left: 0.5rem;
+        font-size: 0.6rem;
+        width: 100%;
+        font-weight: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      span{
+        font-weight: normal;
+        margin-left: 0.2rem;
+      }
+      strong{
+        margin-left: 0.2rem;
+        color: #eb9528;
+        font-size: 0.65rem;
+      }            
+      p{
+        margin: 0;
+        padding-left: 0.5rem;
+        font-size:0.6rem;
+      }
+    }
+  } 
+}
+
+.QRcode{
+  padding-top: 0.8rem;
+  margin-bottom: 0.75rem;
+  background: #fff;
+  .img{
+    img{
+      display: block;
+      margin: 0 auto;
+    }
+    p{
+      font-size: 0.7rem;
+      text-align: center;
+    }
+  }
+  button{
+    margin: 0.7rem auto;
+    border: 1px solid #eb7e03;
+    a{
+      color: #eb7e03;
+    }
+  }
+}
+
+.popup-QRcode{
+    background: rgba(0,0,0,0.9);
+    color: #fff;
+   button{
+    margin: 0 auto;
+    display: block;
+    width: 20%;
+    a{
+      display: inline-block;
+      text-align: center;
+      width: 60%;
+      color: #ccc;
+    }    
+  }   
+}
+.follow-QRcode{
+  margin-top: 1rem;
+  .img{
+    img{
+      display: block;
+      margin: 0 auto;
+      width: 60%;
+    }
+  }
+  p{
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  h3{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  ul{
+    list-style: none;
+    li{
+      font-size: 0.8rem;
+      line-height: 2rem;
+      height: 2rem;
+    }
+  }
+
+
+}
+// .list-block{
+//   margin-top:0;
+//   .item-content{
+//     // padding-left: 0;
+//   }
+//   .item-inner{
+//   padding-top:0;
+//   padding-bottom: 0;
+// }
+//   .p-s-g{
+//     display: flex;
+//     padding-left: 0;
+//     font-size:0.7rem;
+//     list-style:none;
+//     .project{
+//       width:6.5em;
+//     }
+//     .girl{
+//       width:5.5em;
+//     }
+//     .store{
+//       flex:1
+//     }
+//     >li{
+//       // flex: 1;
+//       border-right: 1px solid #eee;
+//     }
+//   }
+// }
+.page-appointment{
+  .content-block-title{
+    font-size: 0.85rem;
+    margin: 1rem 0.75rem 0.5rem;
+  }
+  .list-block{
+    margin: 0;
+  }
+ .content-block-title{
+   display: flex;
+  >div{
+    flex: 1;
+    text-align: center;
+  }
+ }
+ .item-content{
+  padding: 0 1.2rem;
+ }
+ input{
+  text-align: center;
+ }
+}
+.picker-items {
+  .col-city,.col-province,.col-district{
+    font-size: 0.77rem;
+  }
+  .col-province,.col-district{
+    width: 4rem;
+  }
+  .col-city{
+    width: 8rem;
+  }
+  .picker-item{
+    padding: 0 6px;
+  }
+}
+form.subscribe{
+  margin-bottom: 1rem;
+}
+// 美容师样式
+.choose-avator{
+  position: relative;
+  .bgcolor{
+    margin: 0 auto;
+    background: #691994;
+    transform: rotate(10deg);
+    height: 6.5rem;
+    width: 6.5rem;
+  }
+  .img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 6.5rem;
+    overflow: hidden;
+    height: 6.5rem;
+     img{
+      display: block;
+      width: 100%;
+    }   
+  }
+  .intro{
+    p{
+      margin: 0;
+    }
+    text-align: center;
+    .number{
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+    .name,.goodAt{
+      font-size: 0.8rem;
+    }
+  }
+
+ .button{
+   display: block;
+   margin: 0.6rem auto;
+   background: #f14031;
+   border-style: none;
+   width: 5rem;
+   height: 1.5rem;
+   color: #fff;
+   font-size: 0.8rem;
+   // text-align: center;
+ }
+
+}
+
+ .choose{
+  text-align: center;
+ }

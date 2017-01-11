@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">    
+    <title>在线预约</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="fonts/indexfont/iconfont.css">
+    <!-- endbuild -->
+    
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div class="page-group">
+        <!-- 单个page ,第一个.page默认被展示-->
+        <div class="page page-appointment">
+            <!-- 标题栏 -->
+<!--           <header class="bar bar-nav">
+            <a class="button button-link button-nav pull-left back" href="index.html">
+              <span class="icon icon-left"></span>
+              返回
+            </a>
+            <h1 class='title'>在线预约</h1>
+          </header> -->
+
+            <!-- 工具栏 -->
+            <nav class="bar bar-tab">
+                <a class="tab-item external active" href="index.html">
+                    <span class="icon icon-home"></span>
+                    <span class="tab-label">首页</span>
+                </a>
+                <a class="tab-item external" href="text.html">
+                    <span class="icon icon-app"></span>
+                    <span class="tab-label">服务项目</span>
+                </a>
+                <a class="tab-item external" href="subscribe.html">
+                    <span class="icon icon-phone"></span>
+                    <span class="tab-label">在线预约</span>
+                </a>
+                <a class="tab-item external" href="#">
+                    <span class="icon icon-code"></span>
+                    <span class="tab-label">附近门店</span>
+                </a>
+                <a class="tab-item external" href="#">
+                    <span class="icon icon-me"></span>
+                    <span class="tab-label">个人中心</span>
+                </a>                
+            </nav>
+
+            <!-- 这里是页面内容区 -->
+          <div class="content">
+            <!-- <div class="content-block"> -->
+              <form method="post" action="./action" class="subscribe">
+                  <div class="content-block-title">
+                    <div>项目</div>
+                    <div>门店</div>
+                    <div>美容师</div>
+                  </div>
+                  <!-- <div class="content-block"> -->
+                    <div class="list-block">
+                      <ul>
+                        <!-- Text inputs -->
+                        <li>
+                          <!-- <div class="item-content"> -->
+                            <div class="item-inner">
+                              <!-- <div class="item-title label">选择预约</div> -->
+                              <div class="item-input">
+                                <input type="text" name="text" id="text" placeholder="--请选择对应项目的美容师--" value="" >
+                                
+                              </div>
+                            </div>
+                          <!-- </div> -->
+                        </li>
+
+                      </ul>
+                    </div>
+                  <!-- </div> -->
+                  <!-- <div class="content-block-title">开始时间</div> -->
+                  <!-- <div class="content-block"> -->
+                    <div class="list-block">
+                    <ul>
+                     <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">时间</div>
+                            <div class="item-input">
+                              <input type="text" name="time" id='datetime-picker' placeholder="--请选择开始时间--" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                     <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">电话</div>
+                            <div class="item-input">
+                              <input type="text" name="time" id='phoneNumber' placeholder="--请留下您的号码--" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>                                                                                      
+                    </ul>
+                  </div>
+               <!-- </div> -->
+
+ 
+           </form>
+          <p class='choose'>您需要选择美容师,并选取开始时间进行预约</p>
+          <div id="choose-avator" class="choose-avator" style="display: none">
+      
+             <div class="bgcolor">
+             </div>
+             <div class="img">
+                 <img src="">
+             </div>
+
+              <div class="intro">
+                  <p class="number"></p>
+                  <p class="name"></p>
+                  <p class="goodAt"></p>
+              </div>
+              <button class="button">确认预约</button>
+          </div>  
+
+       <!-- </div> -->
+       <!-- content-block -->
+    </div>
+     <!-- content -->
+ </div>
+ <!-- page -->
+</div>
+<!-- pagegroup -->
+
+    <!-- popup, panel 等放在这里 -->
+    <div class="panel-overlay"></div>
+    <!-- Left Panel with Reveal effect -->
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+            <p>这是一个侧栏</p>
+            <p></p>
+            <!-- Click on link with "close-panel" class will close panel -->
+            <p><a href="#" class="close-panel">关闭</a></p>
+        </div>
+    </div>
+    
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+  
+    <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.js' charset='utf-8'></script>
+   <!--  <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script> -->
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type="text/javascript" src="scripts/data.js"></script> 
+    <script type="text/javascript" src="scripts/project-picker.js"></script>
+     <script type="text/javascript">
+
+    </script>   
+
+    <script src="scripts/main.js">
+
+    </script>
+
+    <!-- <script>$.init()</script> -->
+    <!-- endbuild -->
+  </body>
+</html>
